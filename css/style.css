@@ -155,3 +155,24 @@ ul li {
     background-image: url("/assets/icons/navigation/cancel.png");
   }
 }
+
+/*  - - - - -HOME AREA - - - - - */
+.banner-image {
+  height: 100vh;
+  position: relative;
+  background: center center no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+  /* outline: 2px yellow dashed; */
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  /* outline: 2px lime dashed; */
+}
