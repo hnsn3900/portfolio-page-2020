@@ -1,0 +1,92 @@
+/* GENERAL STYLES */
+:root {
+  --header-ht: 24px;
+  --header-bg-color: whitesmoke;
+  --menu-btn-wt: 20px;
+  --menu-items: 3;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* - - - - -HEADER- - - - - */
+.page-header {
+  /* outline: yellow 3px dashed; */
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0 16px;
+  height: var(--header-ht);
+  background-color: var(--header-bg-color);
+}
+
+/* .page-header a {
+  text-decoration: none;
+} */
+
+/* - - - - -HEADER-LOGO- - - - - */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  background-color: var(--header-bg-color);
+}
+
+.header-spacer {
+  flex: 1;
+}
+
+.header-nav-btn {
+  display: none;
+  height: var(--header-ht);
+  width: var(--menu-btn-wt);
+  background: center center no-repeat;
+  background-image: url("/assets/icons/navigation/menu.png");
+  background-size: contain;
+  position: absolute;
+  left: calc(100% - var(--menu-btn-wt) - 2px);
+  border: 1px transparent;
+}
+
+/* - - - - -HEADER-NAV- - - - - */
+.header-nav {
+  /* outline: sandybrown 2px dotted; */
+  display: flex;
+  flex: 1;
+}
+
+.header-nav ul {
+  /* outline: 1px dashed green; */
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  margin: 0;
+}
+
+.menu-item {
+  /* outline: 1px dotted salmon; */
+  /* list-style: none; */
+  margin: 0px 24px;
+  border: 1px transparent solid;
+  height: var(--header-ht);
+  background-color: var(--header-bg-color);
+}
+
+.menu-item:hover {
+  border-bottom: 1px solid #888;
+}
