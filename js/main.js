@@ -2,11 +2,13 @@
 let header = document.querySelector(".page-header");
 let headerNav = document.querySelector(".header-nav");
 let headerNavBtn = document.querySelector(".header-nav-btn");
-let menuBtn = document.querySelector(".header-nav-btn");
 
 // EVENT LISTENER
-menuBtn.addEventListener("click", toggleMenu.bind(null, headerNav, header));
-menuBtn.addEventListener("click", toggleMenuIcon.bind(menuBtn));
+headerNavBtn.addEventListener(
+  "click",
+  toggleMenu.bind(null, headerNav, header)
+);
+headerNavBtn.addEventListener("click", toggleMenuIcon.bind(headerNavBtn));
 
 // FUNCTIONS
 function toggleMenuIcon() {
