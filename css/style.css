@@ -1,10 +1,14 @@
 /* GENERAL STYLES */
 :root {
-  --header-ht: 24px;
+  --header-ht: 44px;
+  --collapsible-ht: 24px;
+  --header-pd: 10px 16px;
+  --collapsible-pd: 0px 16px;
   --header-bg-color: whitesmoke;
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -28,21 +32,16 @@ ul li {
   display: flex;
   position: sticky;
   top: 0;
-  padding: 0 16px;
+  padding: var(--header-pd);
   height: var(--header-ht);
   background-color: var(--header-bg-color);
 }
-
-/* .page-header a {
-  text-decoration: none;
-} */
 
 /* - - - - -HEADER-LOGO- - - - - */
 .header-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: inherit;
   background-color: var(--header-bg-color);
 }
 
@@ -52,7 +51,7 @@ ul li {
 
 .header-nav-btn {
   display: none;
-  height: var(--header-ht);
+  height: var(--collapsible-ht);
   width: var(--menu-btn-wt);
   background: center center no-repeat;
   background-image: url("/assets/icons/navigation/menu.png");
@@ -80,10 +79,8 @@ ul li {
 
 .menu-item {
   /* outline: 1px dotted salmon; */
-  /* list-style: none; */
   margin: 0px 24px;
   border: 1px transparent solid;
-  height: var(--header-ht);
   background-color: var(--header-bg-color);
 }
 
@@ -95,6 +92,7 @@ ul li {
 @media screen and (max-width: 400px) {
   .collapsible {
     flex-direction: column;
+    height: var(--collapsible-ht);
     margin: 0;
     padding: 0;
     overflow-y: hidden;
@@ -116,7 +114,7 @@ ul li {
   .collapsible .header-nav {
     flex-direction: column;
     position: relative;
-    top: calc(var(--header-ht) * var(--menu-items) * (-1));
+    top: calc(var(--collapsible-ht) * var(--menu-items) * (-1));
     z-index: -1;
   }
 
@@ -128,6 +126,7 @@ ul li {
 
   .collapsible .header-logo,
   .collapsible .header-nav ul .menu-item {
+    min-height: var(--collapsible-ht);
     width: 100%;
     text-align: center;
     outline: 1px solid #888;
@@ -136,15 +135,15 @@ ul li {
 
   /* TOGGLE NAV MENU CLASSES */
   .expandHeader {
-    height: calc(var(--header-ht) * (var(--menu-items) + 1));
+    height: calc(var(--collapsible-ht) * (var(--menu-items) + 1));
     transition: height 1s ease-in-out;
   }
   .retractHeader {
-    height: var(--header-ht);
+    height: var(--collapsible-ht);
     transition: height 1s ease-in-out;
   }
   .expandMenu {
-    transform: translateY(calc(var(--header-ht) * var(--menu-items)));
+    transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
     transition: transform 1s ease-in-out;
   }
   .retractMenu {
