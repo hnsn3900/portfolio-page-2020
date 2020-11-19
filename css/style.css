@@ -164,6 +164,7 @@ ul li {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+  z-index: -1;
   /* outline: 2px yellow dashed; */
 }
 
