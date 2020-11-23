@@ -39,6 +39,9 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 0;
+}
 ul li {
   list-style: none;
 }
@@ -190,9 +193,10 @@ main .about-area,
 main .skills-area,
 main .contact-area {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
-  margin-top: 16px;
-  padding: 16px;
+  margin-top: 64px;
+  padding: 32px;
   border-radius: 12px;
   box-shadow: 0px 8px 14px -2px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px 8px 14px -2px rgba(0, 0, 0, 0.7);
@@ -227,10 +231,44 @@ main section.skills-area .skills-area-content li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8px 0;
 }
 main section.skills-area .skills-area-content li img {
   height: 100px;
   width: 150px;
+}
+@media screen and (max-width: 400px) {
+  main section.skills-area .skills-area-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  main section.skills-area .skills-area-content li img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    font-size: 16px;
+  }
+  main .about-area,
+main .skills-area,
+main .contact-area {
+    width: 90%;
+    margin: auto;
+    margin-top: 32px;
+    padding: 16px;
+  }
+  main .about-area p,
+main .skills-area p,
+main .contact-area p {
+    width: 90%;
+  }
+  main .about-area hr,
+main .skills-area hr,
+main .contact-area hr {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
