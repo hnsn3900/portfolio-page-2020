@@ -51,58 +51,57 @@ ul li {
   padding: var(--header-pd);
   height: var(--header-ht);
   background-color: var(--header-bg-color);
-}
 
-/* - - - - -HEADER-LOGO- - - - - */
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--header-bg-color);
-}
+  /* - - - - -HEADER-LOGO- - - - - */
+  .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg-color);
+  }
 
-.header-spacer {
-  flex: 1;
-}
+  .header-spacer {
+    flex: 1;
+  }
 
-.header-nav-btn {
-  display: none;
-  height: var(--collapsible-ht);
-  width: var(--menu-btn-wt);
-  background: center center no-repeat;
-  background-image: url("/assets/icons/navigation/menu.png");
-  background-size: contain;
-  position: absolute;
-  left: calc(100% - var(--menu-btn-wt) - 2px);
-  border: 1px transparent;
-}
+  .header-nav-btn {
+    display: none;
+    height: var(--collapsible-ht);
+    width: var(--menu-btn-wt);
+    background: center center no-repeat;
+    background-image: url("/assets/icons/navigation/menu.png");
+    background-size: contain;
+    position: absolute;
+    left: calc(100% - var(--menu-btn-wt) - 2px);
+    border: 1px transparent;
+  }
 
-/* - - - - -HEADER-NAV- - - - - */
-.header-nav {
-  /* outline: sandybrown 2px dotted; */
-  display: flex;
-  flex: 1;
-}
+  /* - - - - -HEADER-NAV- - - - - */
+  .header-nav {
+    /* outline: sandybrown 2px dotted; */
+    display: flex;
+    flex: 1;
 
-.header-nav ul {
-  /* outline: 1px dashed green; */
-  padding-left: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1;
-  margin: 0;
-}
+    ul {
+      /* outline: 1px dashed green; */
+      padding-left: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 1;
+      margin: 0;
 
-.menu-item {
-  /* outline: 1px dotted salmon; */
-  margin: 0px 24px;
-  border: 1px transparent solid;
-  background-color: var(--header-bg-color);
-}
-
-.menu-item:hover {
-  border-bottom: 1px solid #888;
+      .menu-item {
+        /* outline: 1px dotted salmon; */
+        margin: 0px 24px;
+        border: 1px transparent solid;
+        background-color: var(--header-bg-color);
+        &:hover {
+          border-bottom: 1px solid #888;
+        }
+      }
+    }
+  }
 }
 
 /* - - - - -MEDIA QUERIES FOR COLLAPSIBLE HEADER/NAV- - - - -*/
@@ -173,24 +172,27 @@ ul li {
   }
 }
 
-/*  - - - - -HOME AREA - - - - - */
-.banner-image {
-  height: 100vh;
-  position: relative;
-  background: center center no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
-  z-index: -1;
-  /* outline: 2px yellow dashed; */
-}
+/*  - - - - -MAIN - - - - - */
+main {
+  /*  - - - - -HOME AREA - - - - - */
+  .banner-image {
+    height: 100vh;
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+    z-index: -1;
+    /* outline: 2px yellow dashed; */
+  }
 
-.banner-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  height: 100%;
-  /* outline: 2px lime dashed; */
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    /* outline: 2px lime dashed; */
+  }
 }
