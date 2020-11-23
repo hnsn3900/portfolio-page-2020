@@ -16,6 +16,7 @@
     rgba(230, 230 230, 1) 0%,
     rgb(182, 182, 204) 60%
   );
+
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
@@ -23,11 +24,9 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   height: auto;
 }
-
 body {
   height: 100%;
   margin: 0;
@@ -143,7 +142,7 @@ ul li {
   }
 
   .collapsible .header-logo,
-.collapsible .header-nav ul .menu-item {
+  .collapsible .header-nav ul .menu-item {
     min-height: var(--collapsible-ht);
     width: 100%;
     text-align: center;
@@ -156,17 +155,14 @@ ul li {
     height: calc(var(--collapsible-ht) * (var(--menu-items) + 1));
     transition: height 1s ease-in-out;
   }
-
   .retractHeader {
     height: var(--collapsible-ht);
     transition: height 1s ease-in-out;
   }
-
   .expandMenu {
     transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
     transition: transform 1s ease-in-out;
   }
-
   .retractMenu {
     transform: translateY(0px);
     transition: transform 1s ease-in-out;
@@ -176,13 +172,15 @@ ul li {
     background-image: url("/assets/icons/navigation/cancel.png");
   }
 }
+
 /*  - - - - -HOME AREA - - - - - */
 .banner-image {
   height: 100vh;
   position: relative;
   background: center center no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
   z-index: -1;
   /* outline: 2px yellow dashed; */
 }
@@ -196,5 +194,3 @@ ul li {
   height: 100%;
   /* outline: 2px lime dashed; */
 }
-
-/*# sourceMappingURL=style.css.map */
