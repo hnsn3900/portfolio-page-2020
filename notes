@@ -1,0 +1,23 @@
+Page Layout:
+
+.page-wrapper
+  header
+    .header--logo
+      a.header--logo-link
+        img.header--logo-image
+    .header--spacer
+    nav.header--nav
+      ul
+        li.header--nav-item
+          a
+  main
+    .home-area
+      .home-area--content
+    section.about-area
+      .about-area--content
+    section.skills-area
+      .skills-area--content
+    section.contact-area
+      .contact-area--content
+  footer
+    .footer-area--content
