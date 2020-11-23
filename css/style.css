@@ -109,32 +109,26 @@ ul li {
     overflow-y: hidden;
     background-color: transparent;
   }
-
   .collapsible .header-logo {
     position: static;
   }
-
   .collapsible .header-nav-btn {
     display: inline-block;
   }
-
   .collapsible .header-spacer {
     display: none;
   }
-
   .collapsible .header-nav {
     flex-direction: column;
     position: relative;
     top: calc(var(--collapsible-ht) * var(--menu-items) * (-1));
     z-index: -1;
   }
-
   .collapsible .header-nav ul {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
-
   .collapsible .header-logo,
 .collapsible .header-nav ul .menu-item {
     min-height: var(--collapsible-ht);
