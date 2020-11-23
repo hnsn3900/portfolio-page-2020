@@ -231,17 +231,23 @@ main section.skills-area .skills-area-content li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px 0;
+  padding: 16px 0;
 }
 main section.skills-area .skills-area-content li img {
   height: 100px;
   width: 150px;
 }
-@media screen and (max-width: 400px) {
-  main section.skills-area .skills-area-content {
+@media screen and (max-width: 600px) {
+  main section.skills-area .skills-area-content li {
     display: flex;
     justify-content: space-around;
   }
+  main section.skills-area .skills-area-content li img {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 400px) {
   main section.skills-area .skills-area-content li img {
     height: 40px;
     width: 40px;
