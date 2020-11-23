@@ -224,10 +224,6 @@ main {
 
   .about-area {
     background-color: rgb(233, 224, 233);
-    // background-image: linear-gradient(
-    //   rgba(255, 255, 255, 255.1),
-    //   rgba(255, 255, 255, 0.1)
-    // );
     color: rgb(22, 17, 17);
 
     .about-area-content {
@@ -248,10 +244,7 @@ main {
         align-items: center;
         img {
           height: 100px;
-          width: auto;
-        }
-        span {
-          // color: red;
+          width: 150px;
         }
       }
     }
