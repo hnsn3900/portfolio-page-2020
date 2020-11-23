@@ -131,12 +131,12 @@ ul li {
       position: relative;
       top: calc(var(--collapsible-ht) * var(--menu-items) * (-1));
       z-index: -1;
-    }
 
-    .header-nav ul {
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
+      ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
     }
 
     .header-logo,
