@@ -1,10 +1,22 @@
 /* GENERAL STYLES */
 :root {
-  --header-ht: 44px;
+  --header-ht: 50px;
   --collapsible-ht: 24px;
   --header-pd: 10px 16px;
   --collapsible-pd: 0px 16px;
-  --header-bg-color: whitesmoke;
+  --body-bg-color: rgb(255, 255, 255);
+  --body-bg-grad: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(224, 224, 231, 1) 60%
+  );
+  --header-bg-color: rgb(230, 230, 230);
+  --header-bg-grad: linear-gradient(
+    45deg,
+    rgba(230, 230 230, 1) 0%,
+    rgb(182, 182, 204) 60%
+  );
+
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
@@ -12,10 +24,14 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  height: auto;
+}
 body {
   height: 100%;
-  background-color: #ccc;
+  margin: 0;
+  background-color: var(--body-bg-color);
+  background-color: var(--body-bg-grad);
 }
 
 a {
@@ -73,6 +89,7 @@ ul li {
   padding-left: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex: 1;
   margin: 0;
 }
