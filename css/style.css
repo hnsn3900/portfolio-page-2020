@@ -202,6 +202,9 @@ main .about-area p,
 main .skills-area p,
 main .contact-area p {
   text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main .about-area hr,
 main .skills-area hr,
@@ -212,9 +215,22 @@ main .about-area {
   background-color: #e9e0e9;
   color: #161111;
 }
-main .about-area .about-strengths {
+main .about-area .about-area-content .about-strengths {
   display: flex;
   justify-content: center;
+}
+main section.skills-area .skills-area-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+main section.skills-area .skills-area-content li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.skills-area .skills-area-content li img {
+  height: 100px;
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
