@@ -229,18 +229,14 @@ main {
       font-family: "Baloo Thambi 2", cursive;
 
       .banner-btn {
+        display: block;
         padding: 8px;
-        width: 100px;
+        width: auto;
         border: 2px solid #ffffff;
         background-color: transparent;
         color: white;
         &:hover {
           background-color: dodgerblue;
-        }
-        a {
-          display: inline-block;
-          width: 100%;
-          color: inherit;
         }
       }
     }
@@ -335,6 +331,7 @@ main {
             max-width: 600px;
             letter-spacing: 0.5em;
             font-weight: 700;
+            font-size: 16px;
             background-color: #eaeaea;
             &:hover {
               background-color: dodgerblue;

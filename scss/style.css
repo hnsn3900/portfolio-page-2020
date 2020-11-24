@@ -17,7 +17,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -39,13 +40,17 @@ a {
 ul {
   padding-left: 0;
 }
+
 ul li {
   list-style: none;
 }
 
 /* - - - - -HEADER- - - - - */
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: var(--header-pd);
@@ -56,18 +61,29 @@ ul li {
   /* - - - - -HEADER-LOGO- - - - - */
   /* - - - - -HEADER-NAV- - - - - */
 }
+
 .page-header .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: var(--header-bg-color);
   font-family: "Racing Sans One", cursive;
   letter-spacing: 0.5rem;
   color: var(--header-text-color);
 }
+
 .page-header .header-spacer {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 .page-header .header-nav-btn {
   display: none;
   height: var(--collapsible-ht);
@@ -79,26 +95,43 @@ ul li {
   left: calc(100% - var(--menu-btn-wt) - 2px);
   border: 1px transparent;
 }
+
 .page-header .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 .page-header .header-nav ul {
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0;
 }
+
 .page-header .header-nav ul .menu-item {
   margin: 0px 24px;
   border: 1px transparent solid;
   background-color: var(--header-bg-color);
 }
+
 .page-header .header-nav ul .menu-item:hover {
   border-bottom: 1px solid #888;
 }
+
 .page-header .header-nav ul .menu-item a {
   color: var(--header-text-color);
 }
@@ -110,9 +143,13 @@ ul li {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .collapsible {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: var(--collapsible-ht);
     margin: 0;
     padding: 0;
@@ -129,50 +166,64 @@ ul li {
     display: none;
   }
   .collapsible .header-nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     top: calc(var(--collapsible-ht) * var(--menu-items) * (-1));
     z-index: -1;
   }
   .collapsible .header-nav ul {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
   .collapsible .header-logo,
-.collapsible .header-nav ul .menu-item {
+  .collapsible .header-nav ul .menu-item {
     min-height: var(--collapsible-ht);
     width: 100%;
     text-align: center;
     outline: 1px solid #888;
     margin: 0;
   }
-
   /* TOGGLE NAV MENU CLASSES */
   .expandHeader {
     height: calc(var(--collapsible-ht) * (var(--menu-items) + 1));
+    -webkit-transition: height 1s ease-in-out;
     transition: height 1s ease-in-out;
   }
-
   .retractHeader {
     height: var(--collapsible-ht);
+    -webkit-transition: height 1s ease-in-out;
     transition: height 1s ease-in-out;
   }
-
   .expandMenu {
-    transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
+    -webkit-transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
+            transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   }
-
   .retractMenu {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   }
-
   .toggleMenuIcon {
     background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-512.png");
   }
 }
+
 /*  - - - - -MAIN - - - - - */
 main {
   font-size: 24px;
@@ -184,6 +235,7 @@ main {
   /*  - - - - - FOOTER - - - - - */
   /*  - - - - - MAIN MEDIA QUERIES - - - - - */
 }
+
 main .about-area,
 main .skills-area,
 main .contact-area {
@@ -197,6 +249,7 @@ main .contact-area {
   -webkit-box-shadow: 0px 8px 14px -2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 8px 14px -2px rgba(0, 0, 0, 0.7);
 }
+
 main .about-area p,
 main .skills-area p,
 main .contact-area p {
@@ -205,27 +258,41 @@ main .contact-area p {
   margin-left: auto;
   margin-right: auto;
 }
+
 main .about-area hr,
 main .skills-area hr,
 main .contact-area hr {
   width: 60%;
 }
+
 main .home-area {
   height: 100vh;
   position: relative;
   background: center center no-repeat;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://source.unsplash.com/y0_vFxOHayg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/y0_vFxOHayg");
 }
+
 main .home-area .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   height: 100%;
   font-family: "Baloo Thambi 2", cursive;
 }
+
 main .home-area .banner-content .banner-btn {
   display: block;
   padding: 8px;
@@ -234,69 +301,109 @@ main .home-area .banner-content .banner-btn {
   background-color: transparent;
   color: white;
 }
+
 main .home-area .banner-content .banner-btn:hover {
   background-color: dodgerblue;
 }
+
 main .about-area {
   background-color: #e9e0e9;
   color: #161111;
 }
+
 main .about-area .about-area-content .about-strengths {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 main section.skills-area .skills-area-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 main section.skills-area .skills-area-content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 0;
 }
+
 main section.skills-area .skills-area-content li img {
   height: 100px;
   width: 150px;
 }
+
 @media screen and (max-width: 600px) {
   main section.skills-area .skills-area-content li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   main section.skills-area .skills-area-content li img {
     height: 70px;
     width: 70px;
   }
 }
+
 @media screen and (max-width: 400px) {
   main section.skills-area .skills-area-content li img {
     height: 40px;
     width: 40px;
   }
 }
+
 main .contact-area .contact-area-content .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 800px;
   margin: auto;
 }
+
 main .contact-area .contact-area-content .contact-form input,
 main .contact-area .contact-area-content .contact-form textarea {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 8px;
   margin-bottom: 32px;
   border: transparent;
   border-bottom: 1px solid #aaa;
 }
+
 main .contact-area .contact-area-content .contact-form input:hover,
 main .contact-area .contact-area-content .contact-form textarea:hover {
   border-color: #777;
 }
+
 main .contact-area .contact-area-content .contact-form .btn-wrapper {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
 }
+
 main .contact-area .contact-area-content .contact-form .btn-wrapper .submit-btn {
   width: 100%;
   border: 1px solid #aaa;
@@ -308,82 +415,110 @@ main .contact-area .contact-area-content .contact-form .btn-wrapper .submit-btn 
   font-size: 16px;
   background-color: #eaeaea;
 }
+
 main .contact-area .contact-area-content .contact-form .btn-wrapper .submit-btn:hover {
   background-color: dodgerblue;
   color: white;
 }
+
 main footer {
   height: 15vh;
   margin-top: 82px;
   background-color: #dcdcdc;
 }
+
 main footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
+
 main footer .footer-content .social-media-links {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   margin: 0;
 }
+
 main footer .footer-content .social-media-links a {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   background: center center no-repeat url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png");
   background-size: 50px;
 }
+
 main footer .footer-content .social-media-links a.gmail {
   background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-128.png");
 }
+
 main footer .footer-content .social-media-links a.linkedin {
   background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512.png");
 }
+
 main footer .footer-content .social-media-links a.slack {
   background-image: url("https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Slack-128.png");
 }
+
 main footer .footer-content .social-media-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   padding: 8px;
 }
+
 main footer .footer-content .social-media-links ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
+
 main footer .footer-content .copyright-text {
   padding: 16px;
   text-align: center;
   word-spacing: 0.2rem;
   background-color: #dcdcdc;
 }
+
 @media screen and (max-width: 400px) {
   main {
     font-size: 16px;
   }
   main .about-area,
-main .skills-area,
-main .contact-area {
+  main .skills-area,
+  main .contact-area {
     width: 90%;
     margin: auto;
     margin-top: 32px;
     padding: 16px;
   }
   main .about-area p,
-main .skills-area p,
-main .contact-area p {
+  main .skills-area p,
+  main .contact-area p {
     width: 90%;
   }
   main .about-area hr,
-main .skills-area hr,
-main .contact-area hr {
+  main .skills-area hr,
+  main .contact-area hr {
     width: 60%;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

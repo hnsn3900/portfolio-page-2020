@@ -34,10 +34,8 @@
       <div id="home" class="home-area banner-image">
         <div class="banner-content">
           <h1>Hi, I'm Haver Te</h1>
-          <h3>And I'm a web developer</h3>
-          <button class="banner-btn" role="link">
-            <a href="#contact">Hire me</a>
-          </button>
+          <h2>And I'm a web developer</h2>
+          <a href="#contact" class="banner-btn">Hire me</a>
         </div>
       </div>
       <!-- ABOUT AREA -->
@@ -150,7 +148,12 @@
       <section id="contact" class="contact-area">
         <h3>Contact Me</h3>
         <div class="contact-area-content">
-          <form action="" method="get" class="contact-form">
+          <form
+            id="portfolio-contact"
+            action="www.example.com"
+            method="get"
+            class="contact-form"
+          >
             <label for="GET-name">Name:</label>
             <input id="GET-name" type="text" name="name" maxlength="40" />
             <label for="GET-email">Email:</label>
@@ -164,11 +167,10 @@
             <label for="GET-text">Message:</label>
             <textarea
               id="GET-text"
-              type="text"
+              form="portfolio-contact"
               name="message"
               maxlength="120"
               rows="2"
-              form
               required
             ></textarea>
             <div class="btn-wrapper">
@@ -185,25 +187,37 @@
           <div class="social-media-links">
             <ul>
               <li>
-                <a href="https://www.github.com/hnsn3900/" class="github"></a>
+                <a
+                  href="https://www.github.com/hnsn3900/"
+                  target="_blank"
+                  class="github"
+                ></a>
               </li>
-              <li><a href="https://www.gmail.com" class="gmail"></a></li>
+              <li>
+                <a
+                  href="https://www.gmail.com"
+                  target="_blank"
+                  class="gmail"
+                ></a>
+              </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/haver-t-2020"
+                  target="_blank"
                   class="linkedin"
                 ></a>
               </li>
               <li>
                 <a
                   href="https://thinkful.slack.com/archives/C02D02A5D"
+                  target="_blank"
                   class="slack"
                 ></a>
               </li>
             </ul>
           </div>
           <div class="copyright-text">
-            Copyright &copy 2020 All rights reserved | HaverTe.com
+            Copyright &copy; 2020 All rights reserved | HaverTe.com
           </div>
         </div>
       </footer>
