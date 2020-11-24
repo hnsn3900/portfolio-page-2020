@@ -59,6 +59,7 @@ ul li {
   justify-content: center;
   background-color: var(--header-bg-color);
   font-family: "Racing Sans One", cursive;
+  letter-spacing: 0.5rem;
 }
 .page-header .header-spacer {
   flex: 1;
