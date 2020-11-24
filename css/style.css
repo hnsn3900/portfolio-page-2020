@@ -199,7 +199,7 @@ main .home-area {
   position: relative;
   background: center center no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/mac-half-shut--wesson-wang.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/y0_vFxOHayg");
   z-index: -1;
 }
 main .home-area .banner-content {
@@ -312,14 +312,14 @@ main footer .footer-content .social-media-links {
 main footer .footer-content .social-media-links a {
   flex: 1;
   height: 100%;
-  background: center center no-repeat url("/assets/icons/social-media/icon-github.png");
+  background: center center no-repeat url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png");
   background-size: 50px;
 }
 main footer .footer-content .social-media-links a.gmail {
-  background-image: url("/assets/icons/social-media/icon-gmail.png");
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-128.png");
 }
 main footer .footer-content .social-media-links a.linkedin {
-  background-image: url("/assets/icons/social-media/icon-linkedin.png");
+  background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512");
 }
 main footer .footer-content .social-media-links a.slack {
   background-image: url("/assets/icons/social-media/icon-slack.png");
