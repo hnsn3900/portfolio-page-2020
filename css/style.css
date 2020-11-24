@@ -214,7 +214,7 @@ main .home-area .banner-content .banner-btn {
   padding: 8px;
   width: 100px;
   border: 2px solid #ffffff;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
   color: white;
 }
 main .home-area .banner-content .banner-btn:hover {

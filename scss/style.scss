@@ -217,7 +217,8 @@ main {
         padding: 8px;
         width: 100px;
         border: 2px solid #ffffff;
-        background-color: rgba(0, 0, 0, 0.4);
+        // background-color: rgba(0, 0, 0, 0.4);
+        background-color: transparent;
         color: white;
         &:hover {
           background-color: dodgerblue;
