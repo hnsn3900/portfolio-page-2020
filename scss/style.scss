@@ -71,7 +71,7 @@ ul {
     height: var(--collapsible-ht);
     width: var(--menu-btn-wt);
     background: center center no-repeat;
-    background-image: url("/assets/icons/navigation/menu.png");
+    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-24-512.png");
     background-size: contain;
     position: absolute;
     left: calc(100% - var(--menu-btn-wt) - 2px);
@@ -170,7 +170,7 @@ ul {
   }
 
   .toggleMenuIcon {
-    background-image: url("/assets/icons/navigation/cancel.png");
+    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-512.png");
   }
 }
 
@@ -369,7 +369,7 @@ main {
             background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512.png");
           }
           &.slack {
-            background-image: url("/assets/icons/social-media/icon-slack.png");
+            background-image: url("https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Slack-128.png");
           }
         }
         ul {
