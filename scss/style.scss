@@ -302,13 +302,12 @@ main {
       .contact-form {
         display: flex;
         flex-direction: column;
-        label {
-          //
-        }
+        max-width: 800px;
+        margin: auto;
         input,
         textarea {
+          flex: 1;
           padding: 8px;
-          max-width: 800px;
           margin-bottom: 32px;
           border: transparent;
           border-bottom: 1px solid #aaa;
@@ -317,6 +316,7 @@ main {
           }
         }
         .submit-btn {
+          flex: 1;
           border: 1px solid #aaa;
           padding: 16px;
           margin-top: 16px;
@@ -327,12 +327,69 @@ main {
           &:hover {
             background-color: dodgerblue;
             color: white;
-            // background-image: linear-gradient(
-            //   rgba(255, 255, 255, 0.8),
-            //   rgba(255, 255, 255, 0.4)
-            // );
           }
         }
+      }
+    }
+  }
+
+  /*  - - - - - FOOTER - - - - - */
+
+  footer {
+    height: 15vh;
+    // min-height: 200px;
+    margin-top: 82px;
+    background-color: #dcdcdc;
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .social-media-links {
+        flex: 1;
+        height: 100%;
+        // outline: 3px dashed lime;
+        margin: 0;
+        a {
+          flex: 1;
+          height: 100%;
+          background: center center no-repeat
+            url("/assets/icons/social-media/icon-github.png");
+          background-size: 50px;
+          &.gmail {
+            background-image: url("/assets/icons/social-media/icon-gmail.png");
+          }
+          &.linkedin {
+            background-image: url("/assets/icons/social-media/icon-linkedin.png");
+          }
+          &.slack {
+            background-image: url("/assets/icons/social-media/icon-slack.png");
+          }
+          // outline: 2px dashed burlywood;
+        }
+        ul {
+          display: flex;
+          margin: 0;
+          // outline: 2px dashed coral;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          padding: 8px;
+          li {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            // outline: darkgoldenrod 2px dashed;
+          }
+        }
+      }
+      .copyright-text {
+        padding: 16px;
+        text-align: center;
+        word-spacing: 0.2rem;
+        background-color: #dcdcdc;
       }
     }
   }
