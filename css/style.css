@@ -10,12 +10,7 @@
     rgba(255, 255, 255, 1) 0%,
     rgba(224, 224, 231, 1) 60%
   );
-  --header-bg-color: rgb(230, 230, 230);
-  --header-bg-grad: linear-gradient(
-    45deg,
-    rgba(230, 230 230, 1) 0%,
-    rgb(182, 182, 204) 60%
-  );
+  --header-bg-color: rgb(220, 220, 220);
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
@@ -33,6 +28,7 @@ body {
   margin: 0;
   background-color: var(--body-bg-color);
   background-color: var(--body-bg-grad);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -48,7 +44,6 @@ ul li {
 
 /* - - - - -HEADER- - - - - */
 .page-header {
-  /* outline: yellow 3px dashed; */
   display: flex;
   position: sticky;
   top: 0;
@@ -79,12 +74,10 @@ ul li {
   border: 1px transparent;
 }
 .page-header .header-nav {
-  /* outline: sandybrown 2px dotted; */
   display: flex;
   flex: 1;
 }
 .page-header .header-nav ul {
-  /* outline: 1px dashed green; */
   padding-left: 0;
   display: flex;
   justify-content: space-evenly;
@@ -93,7 +86,6 @@ ul li {
   margin: 0;
 }
 .page-header .header-nav ul .menu-item {
-  /* outline: 1px dotted salmon; */
   margin: 0px 24px;
   border: 1px transparent solid;
   background-color: var(--header-bg-color);
@@ -202,23 +194,31 @@ main .skills-area hr,
 main .contact-area hr {
   width: 60%;
 }
-main .banner-image {
+main .home-area {
   height: 100vh;
   position: relative;
   background: center center no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/mac-half-shut--wesson-wang.jpg");
   z-index: -1;
-  /* outline: 2px yellow dashed; */
 }
-main .banner-text {
+main .home-area .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   height: 100%;
-  /* outline: 2px lime dashed; */
+}
+main .home-area .banner-content .banner-btn {
+  padding: 8px;
+  width: 100px;
+  border: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+main .home-area .banner-content .banner-btn:hover {
+  background-color: dodgerblue;
 }
 main .about-area {
   background-color: #e9e0e9;
@@ -276,8 +276,12 @@ main .contact-area .contact-area-content .contact-form input:hover,
 main .contact-area .contact-area-content .contact-form textarea:hover {
   border-color: #777;
 }
-main .contact-area .contact-area-content .contact-form .submit-btn {
+main .contact-area .contact-area-content .contact-form .btn-wrapper {
   flex: 1;
+  text-align: center;
+}
+main .contact-area .contact-area-content .contact-form .btn-wrapper .submit-btn {
+  width: 100%;
   border: 1px solid #aaa;
   padding: 16px;
   margin-top: 16px;
@@ -286,7 +290,7 @@ main .contact-area .contact-area-content .contact-form .submit-btn {
   font-weight: 700;
   background-color: #eaeaea;
 }
-main .contact-area .contact-area-content .contact-form .submit-btn:hover {
+main .contact-area .contact-area-content .contact-form .btn-wrapper .submit-btn:hover {
   background-color: dodgerblue;
   color: white;
 }
