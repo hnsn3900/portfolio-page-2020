@@ -50,7 +50,7 @@ ul {
   height: var(--header-ht);
   background-color: var(--header-bg-color);
   z-index: 10;
-
+  font-size: 16px;
   /* - - - - -HEADER-LOGO- - - - - */
   .header-logo {
     display: flex;
@@ -107,6 +107,12 @@ ul {
 }
 
 /* - - - - -MEDIA QUERIES FOR COLLAPSIBLE HEADER/NAV- - - - -*/
+@media screen and (min-width: 1000px) {
+  .page-header {
+    height: calc(var(--header-ht) + 30px);
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 400px) {
   .collapsible {
     flex-direction: column;
