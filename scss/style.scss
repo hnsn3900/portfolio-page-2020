@@ -238,8 +238,8 @@ main {
           background-color: dodgerblue;
         }
         a {
-          width: inherit;
-          padding: inherit;
+          display: inline-block;
+          width: 100%;
           color: inherit;
         }
       }

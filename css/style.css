@@ -237,8 +237,8 @@ main .home-area .banner-content .banner-btn:hover {
   background-color: dodgerblue;
 }
 main .home-area .banner-content .banner-btn a {
-  width: inherit;
-  padding: inherit;
+  display: inline-block;
+  width: 100%;
   color: inherit;
 }
 main .about-area {
