@@ -226,6 +226,9 @@ main .home-area .banner-content {
   height: 100%;
   font-family: "Baloo Thambi 2", cursive;
 }
+main .home-area .banner-content h2 {
+  margin-top: 0;
+}
 main .home-area .banner-content .banner-btn {
   display: block;
   padding: 8px;
