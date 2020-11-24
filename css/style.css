@@ -28,7 +28,7 @@ body {
   margin: 0;
   background-color: var(--body-bg-color);
   background-color: var(--body-bg-grad);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -58,6 +58,7 @@ ul li {
   align-items: center;
   justify-content: center;
   background-color: var(--header-bg-color);
+  font-family: "Racing Sans One", cursive;
 }
 .page-header .header-spacer {
   flex: 1;
@@ -209,6 +210,7 @@ main .home-area .banner-content {
   align-items: center;
   color: white;
   height: 100%;
+  font-family: "Baloo Thambi 2", cursive;
 }
 main .home-area .banner-content .banner-btn {
   padding: 8px;
@@ -319,7 +321,7 @@ main footer .footer-content .social-media-links a.gmail {
   background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-128.png");
 }
 main footer .footer-content .social-media-links a.linkedin {
-  background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512");
+  background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512.png");
 }
 main footer .footer-content .social-media-links a.slack {
   background-image: url("/assets/icons/social-media/icon-slack.png");
