@@ -179,28 +179,6 @@ ul {
 main {
   font-size: 24px;
 
-  /*  - - - - -HOME AREA - - - - - */
-  .banner-image {
-    height: 100vh;
-    position: relative;
-    background: center center no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
-    z-index: -1;
-    /* outline: 2px yellow dashed; */
-  }
-
-  .banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 100%;
-    /* outline: 2px lime dashed; */
-  }
-
   .about-area,
   .skills-area,
   .contact-area {
@@ -226,6 +204,31 @@ main {
     }
   }
 
+  /*  - - - - -HOME AREA - - - - - */
+
+  .banner-image {
+    height: 100vh;
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+    z-index: -1;
+    /* outline: 2px yellow dashed; */
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    /* outline: 2px lime dashed; */
+  }
+
+  /*  - - - - -ABOUT AREA - - - - - */
+
   .about-area {
     background-color: rgb(233, 224, 233);
     color: rgb(22, 17, 17);
@@ -237,6 +240,8 @@ main {
       }
     }
   }
+
+  /*  - - - - -SKILLS AREA - - - - - */
 
   section.skills-area {
     .skills-area-content {
@@ -254,7 +259,7 @@ main {
       }
     }
 
-    // Media Queries
+    // Skills Area Media Queries
     @media screen and (max-width: 600px) {
       .skills-area-content {
         li {
@@ -279,7 +284,61 @@ main {
     }
   }
 
-  // Main Media Queries
+  /*  - - - - - CONTACT AREA - - - - - */
+
+  .contact-area {
+    // background: linear-gradient(
+    //   45deg,
+    //   rgba(230, 230 230, 1) 0%,
+    //   rgb(182, 182, 204) 60%
+    // );
+    // background-color: rgb(207, 232, 233);
+    // background-image: linear-gradient(
+    //   rgba(255, 255, 255, 0.8),
+    //   rgba(255, 255, 255, 0.4)
+    // );
+
+    .contact-area-content {
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        label {
+          //
+        }
+        input,
+        textarea {
+          padding: 8px;
+          max-width: 800px;
+          margin-bottom: 32px;
+          border: transparent;
+          border-bottom: 1px solid #aaa;
+          &:hover {
+            border-color: #777;
+          }
+        }
+        .submit-btn {
+          border: 1px solid #aaa;
+          padding: 16px;
+          margin-top: 16px;
+          max-width: 600px;
+          letter-spacing: 0.5em;
+          font-weight: 700;
+          background-color: #eaeaea;
+          &:hover {
+            background-color: dodgerblue;
+            color: white;
+            // background-image: linear-gradient(
+            //   rgba(255, 255, 255, 0.8),
+            //   rgba(255, 255, 255, 0.4)
+            // );
+          }
+        }
+      }
+    }
+  }
+
+  /*  - - - - - MAIN MEDIA QUERIES - - - - - */
+
   @media screen and (max-width: 400px) {
     font-size: 16px;
     .about-area,

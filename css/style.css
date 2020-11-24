@@ -170,24 +170,10 @@ ul li {
 main {
   font-size: 24px;
   /*  - - - - -HOME AREA - - - - - */
-}
-main .banner-image {
-  height: 100vh;
-  position: relative;
-  background: center center no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
-  z-index: -1;
-  /* outline: 2px yellow dashed; */
-}
-main .banner-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  height: 100%;
-  /* outline: 2px lime dashed; */
+  /*  - - - - -ABOUT AREA - - - - - */
+  /*  - - - - -SKILLS AREA - - - - - */
+  /*  - - - - - CONTACT AREA - - - - - */
+  /*  - - - - - MAIN MEDIA QUERIES - - - - - */
 }
 main .about-area,
 main .skills-area,
@@ -214,6 +200,24 @@ main .about-area hr,
 main .skills-area hr,
 main .contact-area hr {
   width: 60%;
+}
+main .banner-image {
+  height: 100vh;
+  position: relative;
+  background: center center no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/closeup-code-on-screen--ilya-pavlov.jpg");
+  z-index: -1;
+  /* outline: 2px yellow dashed; */
+}
+main .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100%;
+  /* outline: 2px lime dashed; */
 }
 main .about-area {
   background-color: #e9e0e9;
@@ -252,6 +256,35 @@ main section.skills-area .skills-area-content li img {
     height: 40px;
     width: 40px;
   }
+}
+main .contact-area .contact-area-content .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+main .contact-area .contact-area-content .contact-form input,
+main .contact-area .contact-area-content .contact-form textarea {
+  padding: 8px;
+  max-width: 800px;
+  margin-bottom: 32px;
+  border: transparent;
+  border-bottom: 1px solid #aaa;
+}
+main .contact-area .contact-area-content .contact-form input:hover,
+main .contact-area .contact-area-content .contact-form textarea:hover {
+  border-color: #777;
+}
+main .contact-area .contact-area-content .contact-form .submit-btn {
+  border: 1px solid #aaa;
+  padding: 16px;
+  margin-top: 16px;
+  max-width: 600px;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+  background-color: #eaeaea;
+}
+main .contact-area .contact-area-content .contact-form .submit-btn:hover {
+  background-color: dodgerblue;
+  color: white;
 }
 @media screen and (max-width: 400px) {
   main {

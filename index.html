@@ -141,7 +141,32 @@
       </section>
       <!-- CONTACT AREA -->
       <section class="contact-area">
-        <div class="contact-area-content"></div>
+        <h3>Contact Me</h3>
+        <div class="contact-area-content">
+          <form action="" method="get" class="contact-form">
+            <label for="GET-name">Name:</label>
+            <input id="GET-name" type="text" name="name" maxlength="40" />
+            <label for="GET-email">Email:</label>
+            <input
+              id="GET-email"
+              type="email"
+              name="email"
+              maxlength="40"
+              required
+            />
+            <label for="GET-text">Message:</label>
+            <textarea
+              id="GET-text"
+              type="text"
+              name="message"
+              maxlength="120"
+              rows="2"
+              form
+              required
+            ></textarea>
+            <input type="submit" value="Send" class="submit-btn" />
+          </form>
+        </div>
       </section>
     </main>
     <script src="js/main.js"></script>
