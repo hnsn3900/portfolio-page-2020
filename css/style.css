@@ -11,6 +11,7 @@
     rgba(224, 224, 231, 1) 60%
   );
   --header-bg-color: rgb(220, 220, 220);
+  --header-text-color: mediumslateblue;
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
@@ -50,6 +51,7 @@ ul li {
   padding: var(--header-pd);
   height: var(--header-ht);
   background-color: var(--header-bg-color);
+  z-index: 10;
   /* - - - - -HEADER-LOGO- - - - - */
   /* - - - - -HEADER-NAV- - - - - */
 }
@@ -60,6 +62,7 @@ ul li {
   background-color: var(--header-bg-color);
   font-family: "Racing Sans One", cursive;
   letter-spacing: 0.5rem;
+  color: var(--header-text-color);
 }
 .page-header .header-spacer {
   flex: 1;
@@ -94,6 +97,9 @@ ul li {
 }
 .page-header .header-nav ul .menu-item:hover {
   border-bottom: 1px solid #888;
+}
+.page-header .header-nav ul .menu-item a {
+  color: var(--header-text-color);
 }
 
 /* - - - - -MEDIA QUERIES FOR COLLAPSIBLE HEADER/NAV- - - - -*/
@@ -163,6 +169,7 @@ ul li {
 /*  - - - - -MAIN - - - - - */
 main {
   font-size: 24px;
+  scroll-behavior: smooth;
   /*  - - - - -HOME AREA - - - - - */
   /*  - - - - -ABOUT AREA - - - - - */
   /*  - - - - -SKILLS AREA - - - - - */
@@ -202,7 +209,6 @@ main .home-area {
   background: center center no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/y0_vFxOHayg");
-  z-index: -1;
 }
 main .home-area .banner-content {
   display: flex;
@@ -222,6 +228,11 @@ main .home-area .banner-content .banner-btn {
 }
 main .home-area .banner-content .banner-btn:hover {
   background-color: dodgerblue;
+}
+main .home-area .banner-content .banner-btn a {
+  width: inherit;
+  padding: inherit;
+  color: inherit;
 }
 main .about-area {
   background-color: #e9e0e9;

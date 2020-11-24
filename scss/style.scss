@@ -11,6 +11,7 @@
     rgba(224, 224, 231, 1) 60%
   );
   --header-bg-color: rgb(220, 220, 220);
+  --header-text-color: mediumslateblue;
   --menu-btn-wt: 20px;
   --menu-items: 3;
 }
@@ -48,6 +49,7 @@ ul {
   padding: var(--header-pd);
   height: var(--header-ht);
   background-color: var(--header-bg-color);
+  z-index: 10;
 
   /* - - - - -HEADER-LOGO- - - - - */
   .header-logo {
@@ -57,6 +59,7 @@ ul {
     background-color: var(--header-bg-color);
     font-family: "Racing Sans One", cursive;
     letter-spacing: 0.5rem;
+    color: var(--header-text-color);
   }
 
   .header-spacer {
@@ -94,6 +97,9 @@ ul {
         background-color: var(--header-bg-color);
         &:hover {
           border-bottom: 1px solid #888;
+        }
+        a {
+          color: var(--header-text-color);
         }
       }
     }
@@ -171,6 +177,7 @@ ul {
 /*  - - - - -MAIN - - - - - */
 main {
   font-size: 24px;
+  scroll-behavior: smooth;
 
   .about-area,
   .skills-area,
@@ -205,7 +212,6 @@ main {
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("https://source.unsplash.com/y0_vFxOHayg");
-    z-index: -1;
 
     .banner-content {
       display: flex;
@@ -224,6 +230,11 @@ main {
         color: white;
         &:hover {
           background-color: dodgerblue;
+        }
+        a {
+          width: inherit;
+          padding: inherit;
+          color: inherit;
         }
       }
     }
