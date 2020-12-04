@@ -22,6 +22,7 @@
 
 html {
   height: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -176,7 +177,6 @@ ul li {
 /*  - - - - -MAIN - - - - - */
 main {
   font-size: 24px;
-  scroll-behavior: smooth;
   /*  - - - - -HOME AREA - - - - - */
   /*  - - - - -ABOUT AREA - - - - - */
   /*  - - - - -SKILLS AREA - - - - - */
