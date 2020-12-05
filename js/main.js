@@ -4,11 +4,6 @@ let headerNav = document.querySelector(".header-nav");
 let headerNavBtn = document.querySelector(".header-nav-btn");
 
 // EVENT LISTENER
-// headerNavBtn.addEventListener(
-//   "click",
-//   toggleMenu.bind(null, headerNav, header)
-// );
-
 headerNavBtn.addEventListener(
   "click",
   toggleAccordionMenu.bind(headerNavBtn, headerNav, header)
@@ -20,18 +15,6 @@ headerNavBtn.addEventListener("click", toggleMenuIcon.bind(headerNavBtn));
 function toggleMenuIcon() {
   this.classList.toggle("toggleMenuIcon");
 }
-
-function toggleMenu(menu, menuContainer) {
-  if (menu.classList.contains("expandMenu")) {
-    menu.classList.replace("expandMenu", "retractMenu");
-    menuContainer.classList.replace("expandHeader", "retractHeader");
-  } else {
-    menu.classList.remove("retractMenu");
-    menuContainer.classList.remove("retractHeader");
-    menuContainer.classList.add("expandHeader");
-    menu.classList.add("expandMenu");
-  }
-} // eof()
 
 function toggleAccordionMenu(menu, menuParent) {
   const menuItems = menu.children[0].children.length; // Represents list items in unordered list element

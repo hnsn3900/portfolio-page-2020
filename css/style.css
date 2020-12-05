@@ -131,6 +131,9 @@ ul li {
   .collapsible .header-nav-btn {
     display: inline-block;
   }
+  .collapsible .header-nav-btn.toggleMenuIcon {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-128.png");
+  }
   .collapsible .header-spacer {
     display: none;
   }
@@ -152,31 +155,6 @@ ul li {
     text-align: center;
     outline: 1px solid #888;
     margin: 0;
-  }
-
-  /* TOGGLE NAV MENU CLASSES */
-  .expandHeader {
-    height: calc(var(--collapsible-ht) * (var(--menu-items) + 1));
-    transition: height 1s ease-in-out;
-  }
-
-  .retractHeader {
-    height: var(--collapsible-ht);
-    transition: height 1s ease-in-out;
-  }
-
-  .expandMenu {
-    transform: translateY(calc(var(--collapsible-ht) * var(--menu-items)));
-    transition: transform 1s ease-in-out;
-  }
-
-  .retractMenu {
-    transform: translateY(0px);
-    transition: transform 1s ease-in-out;
-  }
-
-  .header-nav-btn.toggleMenuIcon {
-    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-128.png");
   }
 }
 /*  - - - - -MAIN - - - - - */
