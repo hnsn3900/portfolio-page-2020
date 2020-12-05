@@ -175,8 +175,8 @@ ul li {
     transition: transform 1s ease-in-out;
   }
 
-  .toggleMenuIcon {
-    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-512.png");
+  .header-nav-btn.toggleMenuIcon {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-128.png");
   }
 }
 /*  - - - - -MAIN - - - - - */
