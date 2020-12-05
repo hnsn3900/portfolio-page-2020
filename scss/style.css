@@ -25,6 +25,13 @@ html {
   height: auto;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  html body {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -227,7 +234,6 @@ ul li {
 /*  - - - - -MAIN - - - - - */
 main {
   font-size: 24px;
-  scroll-behavior: smooth;
   /*  - - - - -HOME AREA - - - - - */
   /*  - - - - -ABOUT AREA - - - - - */
   /*  - - - - -SKILLS AREA - - - - - */
