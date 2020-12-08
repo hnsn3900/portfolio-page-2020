@@ -34,6 +34,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  min-width: 300px;
   background-color: var(--body-bg-color);
   background-color: var(--body-bg-grad);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -120,7 +121,7 @@ ul {
 @media screen and (min-width: 1000px) {
   .page-header {
     height: calc(var(--header-ht) + 30px);
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 400px) {
