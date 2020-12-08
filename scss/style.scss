@@ -136,7 +136,7 @@ ul {
 
     .header-nav-btn {
       display: inline-block;
-      &.toggleMenuIcon {
+      .toggleMenuIcon {
         background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-128.png");
       }
     }
@@ -391,7 +391,15 @@ main {
   }
 
   /*  - - - - - MAIN MEDIA QUERIES - - - - - */
-
+  @media screen and (min-width: 401px) {
+    :target::before {
+      content: "";
+      display: block;
+      height: 60px; /* fixed header height*/
+      margin: -60px 0 0; /* negative fixed header height */
+      z-index: 100;
+    }
+  }
   @media screen and (max-width: 400px) {
     font-size: 16px;
     .about-area,

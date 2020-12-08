@@ -131,7 +131,7 @@ ul li {
   .collapsible .header-nav-btn {
     display: inline-block;
   }
-  .collapsible .header-nav-btn.toggleMenuIcon {
+  .collapsible .header-nav-btn .toggleMenuIcon {
     background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-26-128.png");
   }
   .collapsible .header-spacer {
@@ -347,6 +347,17 @@ main footer .footer-content .copyright-text {
   text-align: center;
   word-spacing: 0.2rem;
   background-color: #dcdcdc;
+}
+@media screen and (min-width: 401px) {
+  main :target::before {
+    content: "";
+    display: block;
+    height: 60px;
+    /* fixed header height*/
+    margin: -60px 0 0;
+    /* negative fixed header height */
+    z-index: 100;
+  }
 }
 @media screen and (max-width: 400px) {
   main {
