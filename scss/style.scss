@@ -77,7 +77,7 @@ ul {
   }
 
   .header-nav-btn {
-    display: none;
+    display: none; // Only visible on small screens
     height: var(--header-ht-mobile);
     width: var(--menu-btn-wt);
     background: center center no-repeat;
@@ -203,6 +203,7 @@ main {
   /*  - - - - -HOME AREA - - - - - */
   .home-area {
     height: calc(100vh - var(--header-ht));
+    scroll-margin-top: calc(var(--header-ht));
     position: relative;
     background: center center no-repeat;
     background-size: cover;
@@ -394,17 +395,21 @@ main {
   }
 
   /*  - - - - - MAIN MEDIA QUERIES - - - - - */
-  @media screen and (min-width: 401px) {
-    :target::before {
-      content: "";
-      display: block;
-      height: 60px; /* fixed header height*/
-      margin: -60px 0 0; /* negative fixed header height */
-      z-index: 100;
-    }
-  }
+  // @media screen and (min-width: 401px) {
+  //   :target::before {
+  //     content: "";
+  //     display: block;
+  //     height: 60px; /* fixed header height*/
+  //     margin: -60px 0 0; /* negative fixed header height */
+  //     z-index: 100;
+  //   }
+  // }
   @media screen and (max-width: 400px) {
     font-size: 16px;
+    .home-area {
+      height: calc(100vh - var(--header-ht-mobile));
+      scroll-margin-top: calc(var(--header-ht-mobile));
+    }
     .about-area,
     .skills-area,
     .contact-area {

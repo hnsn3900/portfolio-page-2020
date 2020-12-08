@@ -197,6 +197,7 @@ main .contact-area hr {
 }
 main .home-area {
   height: calc(100vh - var(--header-ht));
+  scroll-margin-top: calc(var(--header-ht));
   position: relative;
   background: center center no-repeat;
   background-size: cover;
@@ -350,20 +351,13 @@ main footer .footer-content .copyright-text {
   word-spacing: 0.2rem;
   background-color: #dcdcdc;
 }
-@media screen and (min-width: 401px) {
-  main :target::before {
-    content: "";
-    display: block;
-    height: 60px;
-    /* fixed header height*/
-    margin: -60px 0 0;
-    /* negative fixed header height */
-    z-index: 100;
-  }
-}
 @media screen and (max-width: 400px) {
   main {
     font-size: 16px;
+  }
+  main .home-area {
+    height: calc(100vh - var(--header-ht-mobile));
+    scroll-margin-top: calc(var(--header-ht-mobile));
   }
   main .about-area,
 main .skills-area,
