@@ -1,9 +1,9 @@
 /* GENERAL STYLES */
 :root {
   --header-ht: 50px;
-  --collapsible-ht: 24px;
+  --header-ht-mobile: 24px;
   --header-pd: 10px 16px;
-  --collapsible-pd: 0px 16px;
+  --header-pd-mobile: 0px 16px;
   --body-bg-color: rgb(255, 255, 255);
   --body-bg-grad: linear-gradient(
     45deg,
@@ -77,7 +77,7 @@ ul li {
 }
 .page-header .header-nav-btn {
   display: none;
-  height: var(--collapsible-ht);
+  height: var(--header-ht-mobile);
   width: var(--menu-btn-wt);
   background: center center no-repeat;
   background-image: url("https://cdn4.iconfinder.com/data/icons/multimedia-75/512/multimedia-24-512.png");
@@ -120,7 +120,7 @@ ul li {
 @media screen and (max-width: 400px) {
   .collapsible {
     flex-direction: column;
-    height: var(--collapsible-ht);
+    height: var(--header-ht-mobile);
     margin: 0;
     padding: 0;
     overflow-y: hidden;
@@ -141,7 +141,7 @@ ul li {
   .collapsible .header-nav {
     flex-direction: column;
     position: relative;
-    top: calc(var(--collapsible-ht) * var(--menu-items) * (-1));
+    top: calc(var(--header-ht-mobile) * var(--menu-items) * (-1));
     z-index: -1;
   }
   .collapsible .header-nav ul {
@@ -151,7 +151,7 @@ ul li {
   }
   .collapsible .header-logo,
 .collapsible .header-nav ul .menu-item {
-    min-height: var(--collapsible-ht);
+    min-height: var(--header-ht-mobile);
     width: 100%;
     text-align: center;
     outline: 1px solid #888;
