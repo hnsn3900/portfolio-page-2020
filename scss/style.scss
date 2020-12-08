@@ -60,6 +60,7 @@ ul {
   background-color: var(--header-bg-color);
   z-index: 10;
   font-size: 16px;
+
   /* - - - - -HEADER-LOGO- - - - - */
   .header-logo {
     display: flex;
@@ -201,7 +202,7 @@ main {
 
   /*  - - - - -HOME AREA - - - - - */
   .home-area {
-    height: 100vh;
+    height: calc(100vh - var(--header-ht));
     position: relative;
     background: center center no-repeat;
     background-size: cover;

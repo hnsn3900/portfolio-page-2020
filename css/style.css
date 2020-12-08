@@ -196,7 +196,7 @@ main .contact-area hr {
   width: 60%;
 }
 main .home-area {
-  height: 100vh;
+  height: calc(100vh - var(--header-ht));
   position: relative;
   background: center center no-repeat;
   background-size: cover;
